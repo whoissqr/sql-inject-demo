@@ -26,6 +26,13 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      # Write your commands here
-      
-      echo 'Hello world'
+      bash <(curl -s  https://detect.synopsys.com/detect.sh) \n
+      --blackduck.url=https://hubsig.blackducksoftware.com/ \n
+      --blackduck.trust.cert=true  \n
+      --blackduck.api.token=ZjJkYjlkMjAtMTFkZS00YjljLWE0OTUtOTZhYjYwMjUwMWIxOmE3NWEwMDk3LTUyYjQtNDMzYi1hMzNjLWE4ZTU1Mzk3ZmViMw== \n
+      --detect.project.name=WebGoat8  \n
+      --detect.project.version.name=M25 \n
+      --detect.polaris.enable=true  \n
+      --polaris.url="https://sipse.polaris.synopsys.com"  \n
+      --polaris.arguments="--\ mvn\ -DskipTests\ clean\ install" \n
+      --polaris.access.token=23shvlrfe94jt1qgo5j5pjmib07b2pi09ml1lpq4iuu7cigdj7cg
