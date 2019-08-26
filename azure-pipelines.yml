@@ -10,6 +10,8 @@ trigger:
 pool:
   vmImage: 'vs2017-win2016'
 
+pool: 'shichao-mac-agent'
+
 steps:
 - task: Maven@3
   inputs:
