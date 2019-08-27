@@ -23,3 +23,8 @@ capture:
       files:
       - directory: ${project.projectDir}
       - excludeRegex: node_modules|bower_components|vendor
+     
+install:
+  coverity:
+    version: 2019.06
+    directory: /Applications/cov-analysis-macos-2019.06
