@@ -35,4 +35,4 @@ steps:
       --detect.polaris.enable=true  \
       --polaris.url="https://sipse.polaris.synopsys.com"  \
       --polaris.arguments="--\ mvn\ -DskipTests\ clean\ install" \
-      --polaris.access.token=23shvlrfe94jt1qgo5j5pjmib07b2pi09ml1lpq4iuu7cigdj7cg
+      --polaris.access.token="23shvlrfe94jt1qgo5j5pjmib07b2pi09ml1lpq4iuu7cigdj7cg"
