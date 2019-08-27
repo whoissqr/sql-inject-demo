@@ -26,13 +26,13 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-    bash <(curl -s  https://detect.synopsys.com/detect.sh) \
-      --blackduck.url=https://hubsig.blackducksoftware.com/ \
-      --blackduck.trust.cert=true  \
-      --blackduck.api.token=ZjJkYjlkMjAtMTFkZS00YjljLWE0OTUtOTZhYjYwMjUwMWIxOmE3NWEwMDk3LTUyYjQtNDMzYi1hMzNjLWE4ZTU1Mzk3ZmViMw== \
-      --detect.project.name=WebGoat8  \
-      --detect.project.version.name=M25 \
-      --detect.polaris.enable=true  \
-      --polaris.url="https://sipse.polaris.synopsys.com"  \
-      --polaris.arguments="--\ mvn\ -DskipTests\ clean\ install" \
-      --polaris.access.token="23shvlrfe94jt1qgo5j5pjmib07b2pi09ml1lpq4iuu7cigdj7cg"
+      bash <(curl -s  https://detect.synopsys.com/detect.sh) \
+        --blackduck.url=https://hubsig.blackducksoftware.com/ \
+        --blackduck.trust.cert=true  \
+        --blackduck.api.token=ZjJkYjlkMjAtMTFkZS00YjljLWE0OTUtOTZhYjYwMjUwMWIxOmE3NWEwMDk3LTUyYjQtNDMzYi1hMzNjLWE4ZTU1Mzk3ZmViMw== \
+        --detect.project.name=WebGoat8  \
+        --detect.project.version.name=M25 \
+        --detect.polaris.enable=true  \
+        --polaris.url="https://sipse.polaris.synopsys.com"  \
+        --polaris.arguments="--\ mvn\ -DskipTests\ clean\ install" \
+        --polaris.access.token="23shvlrfe94jt1qgo5j5pjmib07b2pi09ml1lpq4iuu7cigdj7cg"
