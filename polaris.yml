@@ -26,5 +26,5 @@ capture:
      
 install:
   coverity:
-    version: 2019.06
-    directory: /Applications/cov-analysis-macos-2019.06
+    version: 2019.03
+    directory: /Applications/cov-analysis-macos-2019.03
