@@ -11,18 +11,6 @@ capture:
     - shell: [mvn, -f, pom.xml, clean]
     buildCommands:
     - shell: [mvn, -f, pom.xml, install, -DskipTests]
-  fileSystem:
-    ears:
-      extensions: [ear]
-      files:
-      - directory: ${project.projectDir}
-    java:
-      files:
-      - directory: ${project.projectDir}
-    javascript:
-      files:
-      - directory: ${project.projectDir}
-      - excludeRegex: node_modules|bower_components|vendor
      
 install:
   coverity:
