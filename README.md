@@ -1,10 +1,10 @@
 ## This demo vulnerable RestAPI was forked from https://github.com/CC11001100/sql-inject-demo
 
 ## Technlogy Stack
-   *Java 
-   *Spring Boot
-   *Spring MVC
-   *JdbcTemplate
+   * Java 
+   * Spring Boot
+   * Spring MVC
+   * JdbcTemplate
 
 
 # sample http GET request
