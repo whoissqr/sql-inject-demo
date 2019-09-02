@@ -36,7 +36,7 @@ INSERT INTO t_user (username, passwd) VALUES ('admin', MD5('admin'));
 ```
 
 # notes:
-please check [application.properties][src/main/resources/application.properties] to verify the DB connection string and user credentials are correct.
+please check [application.properties](src/main/resources/application.properties) to verify the DB connection string and user credentials are correct.
 
 
 
