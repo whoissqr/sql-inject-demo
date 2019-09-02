@@ -1,8 +1,8 @@
-## This demo vulnerable RestAPI was forked from
+# This demo vulnerable RestAPI was forked from
 
    https://github.com/CC11001100/sql-inject-demo
 
-## Technlogy Stack
+# Technlogy Stack
    * Java 
    * Spring Boot
    * Spring MVC
@@ -14,7 +14,7 @@ mvn clean install
 ```
 
 
-# Sample http GET request
+## Sample http GET request
 *Request*
 
 ```
@@ -25,7 +25,7 @@ http://localhost:8080/user/login?username=foo&passwd=bar
  {"code":0,"data":false}
 ```
 
-# Prequisite
+## Prequisite
 
 create the database using mysql Command line:
 
@@ -45,7 +45,7 @@ INSERT INTO t_user (username, passwd) VALUES ('admin', MD5('admin'));
 
 ```
 
-# notes
+## notes
 please check [application.properties](src/main/resources/application.properties) to verify the DB connection string and user credentials are correct.
 
 
