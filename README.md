@@ -7,12 +7,22 @@
    * Spring Boot
    * Spring MVC
    * JdbcTemplate
+ 
+## How to build?
+```
+mvn clean install
+```
 
 
-# sample http GET request
+# Sample http GET request
+*Request*
 
 ```
 http://localhost:8080/user/login?username=foo&passwd=bar
+```
+ *Response*
+```
+ {"code":0,"data":false}
 ```
 
 # Prequisite:
