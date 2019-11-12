@@ -18,7 +18,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	void addSessionToken(HttpServletResponse response, String id)
+	void insecure_cookie(HttpServletResponse response, String id)
 	{
 		Cookie c = new Cookie("SESSION_ID", id);
 		response.addCookie(c);
