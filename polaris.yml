@@ -1,0 +1,22 @@
+version: "1"
+project:
+  name: sqli-demo-from-mac
+  branch: ${scm.git.branch}
+  revision:
+    name: ${scm.git.commit}
+    date: ${scm.git.commit.date}
+capture:
+  build:
+    cleanCommands:
+    - shell: [mvn, -f, pom.xml, clean]
+    buildCommands:
+    - shell: [mvn, -f, pom.xml, install, -DskipTests]
+analyze:
+  mode: local
+  coverity:
+    cov-analyze: ["--webapp-security", "--enable", "INSECURE_COOKIE", "--enable", "LOG_INJECTION", "--suppress-vulnerabilities-in-dead-code", "--checker-option", "DOM_XSS:trust_js_client_external:true"]
+
+install:
+  coverity:
+    version: latest
+serverUrl: https://sipse.polaris.synopsys.com
